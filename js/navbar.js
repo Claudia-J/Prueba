@@ -3,20 +3,19 @@ const navbarLinks = document.getElementById('links-navbar');
 const url = window.location.pathname;
 
 // Detectar la profundidad del archivo actual para ajustar las rutas
-const basePath = window.location.pathname.includes('/views/') ? '../' : './';
+const basePath = url.includes('/views/') ? '../' : './';
 
 fetch(`${basePath}assets/data/datos.json`)
      .then(response => response.json())
      .then(data => {
-        data.navItems.map(link => {
+        data.navItems.forEach(link => {
 
-            //Ajustar la URL de cada enlace dinámicamente
-            const adjustedUrl = `${basePath.replace(/\/$/, '')}/${link.url.replace(/^\//, '')}`;
+           // Ajustar la URL eliminando posibles barras redundantes
+           const adjustedUrl = `${basePath}${link.url}`.replace(/\/{2,}/g, '/');
 
             const clase = url.includes(link.url)?'botonin': '';
           
-            navbarLinks.innerHTML += 
-            `
+            navbarLinks.innerHTML += `
                 <a class="${clase}" href="${adjustedUrl}">${link.title}</a>
             `;
      });
