@@ -11,8 +11,7 @@ fetch(`${basePath}assets/data/datos.json`)
         data.navItems.map(link => {
 
             //Ajustar la URL de cada enlace dinámicamente
-
-            const adjustedUrl = `${basePath}${link.url}`;
+            const adjustedUrl = `${basePath.replace(/\/$/, '')}/${link.url.replace(/^\//, '')}`;
 
             const clase = url.includes(link.url)?'botonin': '';
           
