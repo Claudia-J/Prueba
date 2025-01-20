@@ -1,0 +1,85 @@
+{
+    "navItems": [
+        {
+            "title": "Presentación",
+            "url":"/index.html"
+        },
+        {
+            "title": "Proyectos",
+            "url":"/views/proyectos.html"
+        },
+        {
+            "title": "Presupuesto",
+            "url":"/views/presupuesto.html"
+        },
+        {
+            "title": "Contacto",
+            "url":"/views/contacto.html"
+        }
+    ],
+
+    "presentacion": [
+        {
+             "nombre": "Adriana Rojas",
+             "trabajo": "Estudiante de Master D",
+             "descripcion": "¡Hola que tal soy Adriana, estudiante de Desarrollo Web de instituto Master D. Estoy creando una pagina web con JavasCript. Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam eius ex, quis odit commodi cum dignissimos corrupti possimus unde blanditiis!Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+             "linkedin": "https://www.linkedin.com/",
+             "instagram": "https://www.instagram.com/",
+             "cvLink": "assets/images/FotoCV.jpeg"
+        }  
+    ],
+
+    "noticias": [
+        {
+            "titulo": "Aprende a usar ChatGPT paso a paso",
+            "descripcion": "Para entrar en la era de la inteligencia artificial generativa, de la mano del más popular ‘chatbot’, basta con registrarse utilizando un correo electrónico y empezar a preguntar"
+        },
+        {
+            "titulo": "Diego Tarazona: programador de programadores",
+            "descripcion": "El ingeniero electrónico creó un centro de entrenamiento gratuito para programadores en Santander que es ejemplo de cómo el empresariado puede hacer la diferencia en el porvenir de jóvenes de escasos recursos. La expectativa es vincular 1.000 jóvenes cada año"
+        },
+        {
+            "titulo": "Aprende a programar, las mejores escuelas te las enseñamos",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius ex, quis commodi cum dignissimos corrupti possimus unde blanditiis!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        } 
+    ],
+
+    "proyectos": [
+        {
+            "nombre": "PORFOLIO",
+            "descripcion": "Creación de un Porfolio en una clase en directo con los alumnos de Master D. Hemos utilizado los lenguajes aprendidos durante el curso para hacerlo.",
+            "tecnologias": "HTML, CSS y JavasScript",
+            "imagen": "/assets/images/proyecto1.jpg"
+        },
+        {
+            "nombre": "CREA TU WEB",
+            "descripcion": "Creación de una web para un trabajo final de Master D. Incluido además Boostrap como opción personal para practicar",
+            "tecnologias": "HTML, CSS y Boostrap",
+            "imagen": "/assets/images/proyecto2.jpg"
+        },
+        {
+            "nombre": "TRABAJO FINAL JS",
+            "descripcion": "Creación de una web profesional para un trabajo final en Master D. Para desarrollarla tuve que implementarla lógica de validación de formularios con JS y un mapa dinámico usando 'Google Street Maps",
+            "tecnologias": "HTML, CSS y JavasScript",
+            "imagen": "/assets/images/proyecto3.jpg"
+        },
+        {
+            "nombre": "PORFOLIO",
+            "descripcion": "Creación de un Porfolio en una clase en directo con los alumnos de Master D. Hemos utilizado los lenguajes aprendidos durante el curso para hacerlo.",
+            "tecnologias": "HTML, CSS y JavasScript",
+            "imagen": "/assets/images/proyecto4.jpg"
+        },
+        {
+            "nombre": "PORFOLIO",
+            "descripcion": "Creación de un Porfolio en una clase en directo con los alumnos de Master D. Hemos utilizado los lenguajes aprendidos durante el curso para hacerlo.",
+            "tecnologias": "HTML, CSS y JavasScript",
+            "imagen": "/assets/images/proyecto1.jpg"
+        },
+        {
+            "nombre": "CREA TU WEB",
+            "descripcion": "Creación de una web para un trabajo final de Master D. Incluido además Boostrap como opción personal para practicar",
+            "tecnologias": "HTML, CSS y Boostrap",
+            "imagen": "/assets/images/proyecto2.jpg"
+        }
+    ]
+}
