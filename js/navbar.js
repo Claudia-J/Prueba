@@ -3,9 +3,10 @@ const navbarLinks = document.getElementById('links-navbar');
 const url = window.location.pathname;
 console.log(url);
 
-// Detectar la profundidad del archivo actual para ajustar las rutas
+const mainPath = `${url}/Prueba`
 
-const basePath = window.location.pathname.includes('/views/') ? '../Prueba' : './Prueba';
+// Detectar la profundidad del archivo actual para ajustar las rutas
+const basePath = window.location.pathname.includes('/views/') ? '../' : './';
 
 fetch(`${basePath}assets/data/datos.json`)
      .then(response => response.json())
