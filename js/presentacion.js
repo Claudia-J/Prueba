@@ -1,10 +1,5 @@
 const presentacionContainer = document.getElementById('presentacion-container')
 
-//const url2 = window.location.pathname;
-
-// Detectar la profundidad del archivo actual para ajustar las rutas
-//const basePath1 = url2.includes('/views/') ? '../' : './';
-
 fetch(`${basePath}assets/data/datos.json`)
      .then(response => {
         if (!response.ok) {
