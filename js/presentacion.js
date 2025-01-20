@@ -1,11 +1,11 @@
 const presentacionContainer = document.getElementById('presentacion-container')
 
-const url = window.location.pathname;
+const url2 = window.location.pathname;
 
 // Detectar la profundidad del archivo actual para ajustar las rutas
-const basePath = url.includes('/views/') ? '../' : './';
+const basePath1 = url2.includes('/views/') ? '../' : './';
 
-fetch(`${basePath}assets/data/datos.json`)
+fetch(`${basePath1}assets/data/datos.json`)
      .then(response => {
         if (!response.ok) {
             throw new Error(`Error al cargar JSON: ${response.statusText}`);
