@@ -1,7 +1,17 @@
 const presentacionContainer = document.getElementById('presentacion-container')
 
-fetch("../assets/data/datos.json")
-     .then(response => response.json())
+const url = window.location.pathname;
+
+// Detectar la profundidad del archivo actual para ajustar las rutas
+const basePath = url.includes('/views/') ? '../' : './';
+
+fetch(`${basePath}assets/data/datos.json`)
+     .then(response => {
+        if (!response.ok) {
+            throw new Error(`Error al cargar JSON: ${response.statusText}`);
+        }
+        return response.json();
+    })
      .then(data => {
         data.presentacion.map((item) => {
             presentacionContainer.innerHTML +=
