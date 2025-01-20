@@ -36,8 +36,13 @@ fetch(`${basePath1}assets/data/datos.json`)
 
      const noticiasContainer = document.getElementById('noticias-container')
 
-     fetch("../assets/data/datos.json")
-     .then(response => response.json())
+  fetch(`${basePath1}assets/data/datos.json`)
+     .then(response => {
+        if (!response.ok) {
+            throw new Error(`Error al cargar JSON: ${response.statusText}`);
+        }
+        return response.json();
+    })
      .then(data => {
         data.noticias.map((item) => {
             noticiasContainer.innerHTML +=
